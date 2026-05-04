@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printster.in - Orders</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-links-left">
+                <a href="#">ABOUT US</a>
+                <a href="#">HOWS IT WORKS?</a>
+                <a href="#">FAQS</a>
+                <a href="#">OFFERS</a>
+                <a href="#" class="email-link"><i class="fa-regular fa-envelope"></i> EMAIL : PRINT@PRINTSTER.IN</a>
+            </div>
+            <div class="top-links-right">
+                <a href="#">TRACK ORDER</a>
+                <a href="#" class="pcash"><i class="fa-solid fa-wallet"></i> PCASH ( 0.00 )</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="logoimage.png" alt="Printster.in Logo">
+            </div>
+            <div class="nav-and-actions">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <nav class="main-nav">
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#">ALL PRODUCTS <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="#">PRICE CALCULATOR</a>
+                    <a href="#">PRINT NOW</a>
+                    <a href="#">BULK ORDER</a>
+                </nav>
+                <div class="user-actions">
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <div class="user-profile">
+                        <i class="fa-regular fa-user"></i> HARSH PRATAP SINGH
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>ORDERS</h1>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#">Personal Information</a></li>
+                <li class="active"><a href="#">View Orders</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Saved Addresses</a></li>
+                <li><a href="#">PrintCash</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Promotions</a></li>
+            </ul>
+        </aside>
+
+        <!-- Orders Area -->
+        <main class="orders-area">
+            
+            <!-- Order Card 1 -->
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-id">P00182483</div>
+                    <a href="#" class="view-details">View Order Details</a>
+                    <button class="btn-blue">Download Invoice</button>
+                </div>
+                <div class="order-body">
+                    <div class="order-details-left">
+                        <p>Payment Status : <strong>Success</strong></p>
+                        <p>Payment Done Through :<strong>Paytm</strong></p>
+                        <p>Coupon Applied :<strong>Mar 10% Discount</strong></p>
+                        <p>Invoice Number :<strong>PRO/20264/00182483</strong></p>
+                        <p>Shipping : <strong>DTDC Normal</strong></p>
+                    </div>
+                    <div class="order-details-right">
+                        <p><span>Sub Total Amount</span> <span class="amount-val">₹ <strong>136.62</strong></span></p>
+                        <p><span>Discount</span> <span class="amount-val">₹ <strong>15.18</strong></span></p>
+                        <p><span>Net Amount</span> <span class="amount-val">₹ <strong>179.26</strong></span></p>
+                        <p><span>Shipping Amount</span> <span class="amount-val">₹ <strong>35.00</strong></span></p>
+                        <p><span>Print Cash Amount</span> <span class="amount-val">₹ <strong>0.00</strong></span></p>
+                    </div>
+                </div>
+                <div class="order-actions">
+                    <span class="badge badge-green">DISPATCH STATUS :DISPATCHED</span>
+                    <span class="badge badge-red">PRINT STATUS :INCOMPLETE</span>
+                    <button class="btn-green">WRITE A REVIEW</button>
+                </div>
+                <div class="order-footer">
+                    <div class="order-date">Ordered On :<strong>2026-04-15 15:25:51</strong></div>
+                    <div class="order-amount">Order Amount <strong>₹179.26</strong></div>
+                </div>
+            </div>
+
+            <!-- Order Card 2 -->
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-id">P00179167</div>
+                    <a href="#" class="view-details">View Order Details</a>
+                    <button class="btn-blue">Download Invoice</button>
+                </div>
+                <div class="order-body">
+                    <div class="order-details-left">
+                        <p>Payment Status : <strong>Success</strong></p>
+                        <!-- Add missing elements based on typical order or screenshot if available, only top is visible -->
+                    </div>
+                    <div class="order-details-right">
+                        <p><span>Sub Total Amount</span> <span class="amount-val">₹ <strong>180.15</strong></span></p>
+                    </div>
+                </div>
+                <!-- Assuming standard footer to match design flow -->
+                 <div class="order-footer">
+                    <div class="order-date">Ordered On :<strong>...</strong></div>
+                    <div class="order-amount">Order Amount <strong>₹...</strong></div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Top Bar */
+.top-bar {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links-left, .top-links-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-links-left a {
+    color: #0056b3;
+}
+
+.top-links-left a.email-link {
+    color: #d9534f;
+}
+
+.top-links-right a {
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-links-right a.pcash {
+    color: #333;
+}
+
+/* Header */
+.header {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust based on actual logo */
+}
+
+.nav-and-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-icon i {
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.main-nav a {
+    color: #333;
+}
+
+.main-nav a:hover {
+    color: #2874a6;
+}
+
+.main-nav i.fa-house {
+    font-size: 16px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 20px;
+    color: #666;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #5bc0de;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Page Banner */
+.page-banner {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.page-banner h1 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.sidebar-menu {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #555;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #f9f9f9;
+}
+
+.sidebar-menu li.active a {
+    background-color: #337ab7;
+    color: white;
+}
+
+/* Orders Area */
+.orders-area {
+    flex-grow: 1;
+}
+
+/* Order Card */
+.order-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+
+.order-header {
+    background-color: #f9f9f9;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.order-id {
+    background-color: #634960;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.view-details {
+    color: #337ab7;
+    font-size: 13px;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+}
+
+.btn-blue {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-blue:hover {
+    background-color: #286090;
+}
+
+.order-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details-left p, .order-details-right p {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 13px;
+}
+
+.order-details-left strong, .order-details-right strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.order-details-right {
+    text-align: right;
+    min-width: 250px; /* Give some width for the table-like layout */
+}
+
+/* Pseudo-table alignment for the right section */
+.order-details-right p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-actions {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.badge-green {
+    background-color: #5cb85c;
+}
+
+.badge-red {
+    background-color: #d9534f;
+}
+
+.btn-green {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-green:hover {
+    background-color: #449d44;
+}
+
+.order-footer {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    font-size: 13px;
+}
+
+.order-footer strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-bar-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-and-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .order-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .order-details-right {
+        text-align: left;
+        min-width: auto;
+    }
+    
+    .order-actions {
+        flex-wrap: wrap;
+    }
+    
+    .order-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
